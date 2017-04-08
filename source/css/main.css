@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #fff;
+  background: #000;
+  min-height: 100vh;
+  position: relative;
+  font-family: 'Calibri';
+}
+
+main {
+  min-height: 70vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+nav,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+}
+
+h2 {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+header {
+  padding: 1.25rem 0;
+  margin-bottom: 1.875rem;
+  background: #111;
+}
+header h1 {
+  text-align: center;
+}
+header .refresh {
+  text-align: center;
+  font-size: 1.5rem;
+  -webkit-transition: transform 300ms linear;
+  -moz-transition: transform 300ms linear;
+  -o-transition: transform 300ms linear;
+  -ms-transition: transform 300ms linear;
+  transition: transform 300ms linear;
+}
+header .refresh.active {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+footer {
+  padding: 1.25rem 0;
+  text-align: center;
+  background: #111;
+  margin-top: 1.25rem;
+}
+
+.stock-table {
+  width: 95%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+@media (min-width: 1024px) {
+  .stock-table {
+    width: 65%;
+    font-size: 16px;
+  }
+}
+.stock-table th,
+.stock-table td {
+  width: 25%;
+  text-align: center;
+  height: 2.8125rem;
+  padding: 0.3125rem;
+}
+.stock-table tbody tr {
+  border-bottom: 1px solid #000;
+}
+.stock-table tbody tr:nth-child(even) {
+  background: #111;
+}
+.stock-table tbody tr:nth-child(odd) {
+  background: #222;
+}
+.stock-table thead tr {
+  background: -webkit-linear-gradient(#111, #222, #000);
+  background: -o-linear-gradient(#111, #222, #000);
+  background: -moz-linear-gradient(#111, #222, #000);
+  background: linear-gradient(#111, #222, #000);
+}
+.stock-table .rise {
+  background: #1b5e20;
+}
+.stock-table .fall {
+  background: #b71c1c;
+}

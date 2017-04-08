@@ -1,0 +1,66 @@
+header {
+    padding: toRem(20px) 0;
+    margin-bottom: toRem(30px);
+    background: #111;
+    h1 {
+        text-align: center;
+    }
+    .refresh {
+    	text-align: center;
+    	font-size: toRem(24px);
+    	@include v-prefix(transition, transform 300ms linear);
+    	&.active {
+    		@include v-prefix(transform, rotate(360deg));
+    	}
+    }
+}
+
+footer {
+    padding: toRem(20px) 0;
+    text-align: center;
+    background: #111;
+    margin-top: toRem(20px)
+}
+
+.stock-table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: $secondary-font-size;
+    @include mediaDesktop {
+        width: 65%;
+        font-size: $primary-font-size;
+    }
+    th,
+    td {
+        width: 25%;
+        text-align: center;
+        height: toRem(45px);
+        padding: toRem(5px);
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid #000;
+            &:nth-child(even) {
+                background: #111;
+            }
+            &:nth-child(odd) {
+                background: #222;
+            }
+        }
+    }
+    thead {
+        tr {
+            background: -webkit-linear-gradient(#111, #222, #000);
+            background: -o-linear-gradient(#111, #222, #000);
+            background: -moz-linear-gradient(#111, #222, #000);
+            background: linear-gradient(#111, #222, #000);
+        }
+    }
+    .rise {
+        background: #1b5e20;
+    }
+    .fall {
+        background: #b71c1c;
+    }
+}

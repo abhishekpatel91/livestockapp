@@ -1,0 +1,22 @@
+{
+  "name": "event_scheduler",
+  "authors": [
+    "SPAM"
+  ],
+  "description": "",
+  "main": "",
+  "license": "Sapient",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.4.2",
+    "jquery": "^3.2.1",
+    "jquery-sparkline": "^2.1.3"
+  }
+}

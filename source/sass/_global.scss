@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+html {
+	font-size: $primary-font-size;
+}
+
+body {
+    color: $primary-font-color;
+    background: $body-background;
+    min-height: 100vh;
+    position: relative;
+    font-family: 'Calibri';
+}
+
+main {
+    min-height: 70vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+nav,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: toRem(24px);
+    font-weight: 500;
+    text-transform: uppercase;
+    @include mediaDesktop {
+        font-size: toRem(30px);
+    }
+}
+
+h2 {
+    font-size: toRem(18px);
+    text-transform: uppercase;
+    @include mediaDesktop {
+        font-size: toRem(24px);
+    }
+}
+
+h3 {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}

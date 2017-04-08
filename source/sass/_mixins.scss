@@ -1,0 +1,35 @@
+@function toRem ($value) {
+    @return ($value/$primary-font-size) + rem;
+}
+
+@mixin v-prefix ($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -o-#{$property}: $value;
+    -ms-#{$property}: $value;
+    #{$property}: $value;
+}
+
+@mixin mediaDesktop {
+    @media (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+@mixin mediaMobile {
+    @media (max-width: $mobile-breakpoint) {
+        @content;
+    }
+}
+
+@mixin mediaTabDesktop {
+    @media (min-width: $mobile-breakpoint) {
+        @content;
+    }
+}
+
+@mixin mediaMobileTab {
+    @media (max-width: $desktop-breakpoint) {
+        @content;
+    }
+}
