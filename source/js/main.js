@@ -2,7 +2,7 @@ import { StockList } from './components/stockList.js';
 
 const initSocket = () => {
     const stockHistory = {},
-        socket = new WebSocket('wss://stocks.mnet.website');
+        socket = new WebSocket('ws://stocks.mnet.website');
 
     socket.onopen = () => {
         ReactDOM.render( < StockList / > , document.querySelector('.react-container'));
